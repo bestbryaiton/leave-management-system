@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height: 100%;
+    background:rgb(128, 187, 167);
+    transition: all .5s ease;
+  }
+  .sidebar header{
+
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background:rgb(120, 196, 196);
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    border-left: 5px solid #b9553fad;
+    color: #b93632;
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px rgb(120, 196, 196);
+    margin: 15px 30px;
+    font-size: 29px;
+    background: rgb(120, 196, 196);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 70px;
+      left: 0;
+      margin: 100px 0;
+    }
+    header,#btn,#cancel{
+      display: none;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 60px;
+    }
+    .sidebar a i{
+      margin-left: -10px;
+    }
+    a:hover {
+      width: 200px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  
+  .container{
+    background: linear-gradient(#ccc,#bbb);
+    width: 100%;
+    height: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+ form{
+  align-items: center;
+  box-shadow: 10px 10px 5px grey;
+    background:rgb(128, 187, 167);
+     flex-direction: column;
+     display: flex;
+     padding:2vw 4vw ;
+     width:80% ;
+     max-width:600px ;
+     border-radius: 11px;
+     margin-bottom: 150px;
+  }
+  form input{
+    box-shadow: 2px 2px 2px gray;
+    width: 500px;
+    height: 8px;
+    margin: 0;
+    margin-top: 8px;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    outline: none;
+    background: #d1e0e0;
+    font-size: medium;
+ }
+ form button{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50px;
+    outline: none;
+    cursor:pointer;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;}
+    form div a{
+      color: black;
+      border: 1px solid rgb(199, 199, 199); 
+      border-radius: 10px;
+       padding: 15px;
+      background-color: #82c1d1;
+      box-shadow: 5px 5px 5px grey;
+      margin-left: 550px;
+      margin-bottom: 100px;
+        }
+    
+    H4{
+        background-color: rgb(120, 196, 196);
+    
+        flex-direction: column;
+        display: flex;
+        padding: 50PX 50PX;
+        width:100%;
+        margin-top: -20PX;
+        
+    }
+   
